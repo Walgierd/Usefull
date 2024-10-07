@@ -1,0 +1,30 @@
+# Wykluczanie folderu Visual Studio
+.vs/
+
+# Pliki binarne i tymczasowe
+*.exe
+*.dll
+*.obj
+*.pdb
+*.log
+*.tmp
+*.cache
+*.csproj.user
+*.suo
+*.user
+*.tlog
+*.idb
+*.lastbuildstate
+*.opensdf
+*.sdf
+*.VC.db
+
+# Foldery kompilacyjne
+bin/
+obj/
+
+# Folder systemowy macOS
+.DS_Store
+
+# Folder systemowy Windows
+Thumbs.db
