@@ -5,10 +5,10 @@
 #include "Matrix.h"
 
 int main() {
-	Matrix<int> mat1(3, 4, 4);
+	Matrix<int> mat1(3, 4, 8);
 	std::cout << mat1 << std::endl;
 
-	Matrix<double> mat2(3, 4, 4);
+	Matrix<double> mat2(3, 4, 3.89);
 	std::cout << mat2 << std::endl;
 
 	Matrix<std::string> mat3(4, 4, "ok");
