@@ -24,7 +24,9 @@ public:
 	}
 
 	~Matrix() noexcept {
-		delete[] data;
+		if (data) {
+			delete[] data;
+		}
 	}
 
 	size_t Size_m() const noexcept {
