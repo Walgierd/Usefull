@@ -4,7 +4,7 @@
 
 #include <ostream>
 
-template <class T> T DefValue() {
+template <typename T> T DefValue() {
 	throw std::exception();
 }
 
@@ -12,7 +12,7 @@ template <> int DefValue() { return 6; }
 template <> double DefValue() { return 23; }
 template <> std::string DefValue() { return "Super :D"; }
 
-template<class T> class Vector {
+template<typename T> class Vector {
 	size_t size;
 	T* data;
 public:
