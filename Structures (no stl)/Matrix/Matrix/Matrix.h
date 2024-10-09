@@ -4,11 +4,11 @@
 
 #include <ostream>
 
-template <class T> T DefValue() {
+template <typename T> T DefValue() {
 	throw std::exception();
 }
 
-template <class T> class Matrix {
+template <typename T> class Matrix {
 	size_t m;
 	size_t n;
 	T* data;
