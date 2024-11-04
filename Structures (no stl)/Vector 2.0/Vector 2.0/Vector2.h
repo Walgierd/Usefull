@@ -20,3 +20,12 @@ template<class T> std::ostream& operator<<(std::ostream& out, const std::vector<
 	}
 	return out;
 }
+
+template<class T>
+std::ostream& operator<<(std::ostream& out, const std::vector<T>& v) {
+	for (const auto& el : v) {
+		out << el << " ";
+	}
+	out << std::endl;
+	return out;
+}
