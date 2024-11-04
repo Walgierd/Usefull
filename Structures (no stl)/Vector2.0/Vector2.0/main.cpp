@@ -1,9 +1,9 @@
-﻿//Vector 2.0.cpp
+//Vector 2.0.cpp
 
 #include <iostream>
 #include <algorithm>
 #include <numeric>
-#include "Vector2.h"
+#include "Vector2.0.h"
 
 int main()
 {
@@ -16,7 +16,7 @@ int main()
 	std::sort(v1.begin(), v1.end(), [](const auto& l, const auto& r) {return r < l; });
 	std::cout << v1 << std::endl;
 
-	std::sort(v1.begin(), v1.end(), [avg](const auto& l, const auto& r) {return abs(r-avg) > abs(l - avg); });
+	std::sort(v1.begin(), v1.end(), [avg](const auto& l, const auto& r) {return abs(r - avg) > abs(l - avg); });
 	std::cout << v1 << std::endl;
 
 	auto v2 = CreateVector<int>(10, [](const size_t i) { return i / 3; });
@@ -27,17 +27,17 @@ int main()
 
 	auto v3 = CreateVector<int>(10, [](const size_t i) { return i % 3; });
 	std::cout << v3 << std::endl;
-	
+
 	std::sort(v3.begin(), v3.end());
 	v3.erase(std::unique(v3.begin(), v3.end()), v3.end());
 	std::cout << v3 << std::endl;
-	
+
 	auto v4 = CreateVector<int>(10, [x = -1](const size_t i) mutable {x *= -1; return x * (i + 1); });
 	std::cout << v4 << std::endl;
 
 	v4.erase(std::remove_if(v4.begin(), v4.end(), [](const auto& el) {return el <= 0; }), v4.end());
 	std::cout << v4 << std::endl;
-	
+
 
 	//Zadanie domowe:
 	std::cout << "Zadanie 1:" << std::endl;
@@ -75,13 +75,13 @@ int main()
 	std::cout << "Zadanie 5:" << std::endl;
 
 	auto remove_multiples = [](std::vector<int>& v) {
-		std::sort(v.begin(), v.end()); 
-		v.erase(std::unique(v.begin(), v.end()), v.end()); 
+		std::sort(v.begin(), v.end());
+		v.erase(std::unique(v.begin(), v.end()), v.end());
 
 		v.erase(std::remove_if(v.begin(), v.end(), [&](int n) {
 			for (int m : v) {
 				if (m != n && m != 0 && n % m == 0) {
-					return true; 
+					return true;
 				}
 			}
 			return false;
@@ -119,4 +119,3 @@ int main()
 	override_elements(v2, 5, -3);
 	std::cout << "After overriding elements: " << v2 << std::endl;
 }
-
