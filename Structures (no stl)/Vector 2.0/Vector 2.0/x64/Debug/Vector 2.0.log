@@ -1,0 +1,41 @@
+﻿  Vector 2.0.cpp
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\functional(876,31): warning C4267: "return": konwersja z "size_t" do "_Rx", możliwa utrata danych
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\functional(876,31): warning C4267:         with
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\functional(876,31): warning C4267:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\functional(876,31): warning C4267:             _Rx=int
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\functional(876,31): warning C4267:         ]
+  (kompilowanie pliku źródłowego „Vector%202.0.cpp”)
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\functional(876,31):
+      kontekst tworzenia wystąpienia szablonu (najpierw najstarszy) to
+          C:\Users\trela\source\repos\Usefull\Structures (no stl)\Vector 2.0\Vector 2.0\Vector 2.0.cpp(62,77):
+          zobacz odwołanie do kompilowanego tworzenia wystąpienia „std::function<int (size_t)>::function<main::<lambda_10>,0>(_Fx &&)” funkcji szablon
+          with
+          [
+              _Fx=main::<lambda_10>
+          ]
+              C:\Users\trela\source\repos\Usefull\Structures (no stl)\Vector 2.0\Vector 2.0\Vector 2.0.cpp(62,15):
+              zobacz pierwsze odwołanie do elementu „std::function<int (size_t)>::function” w „main”
+          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\functional(1089,15):
+          zobacz odwołanie do kompilowanego tworzenia wystąpienia „void std::_Func_class<_Ret,size_t>::_Reset<_Ty>(_Fx &&)” funkcji szablon
+          with
+          [
+              _Ret=int,
+              _Ty=main::<lambda_10>,
+              _Fx=main::<lambda_10>
+          ]
+          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\functional(962,23):
+          zobacz odwołanie do aktualnie kompilowanego szablonu zmiennych „const bool _Is_large<std::_Func_impl_no_alloc<`main'::`2'::<lambda_10>,int,unsigned __int64> >”
+          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\functional(748,28):
+          zobacz odwołanie do kompilowanego tworzenia wystąpienia „std::_Func_impl_no_alloc<main::<lambda_10>,_Ret,size_t>” klasy klasa szablon
+          with
+          [
+              _Ret=int
+          ]
+          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\functional(872,9):
+          podczas kompilowania funkcji składowej „_Rx std::_Func_impl_no_alloc<main::<lambda_10>,_Rx,size_t>::_Do_call(size_t &&)” klasy klasa szablon
+          with
+          [
+              _Rx=int
+          ]
+  
+  Vector 2.0.vcxproj -> C:\Users\trela\source\repos\Usefull\Structures (no stl)\Vector 2.0\x64\Debug\Vector 2.0.exe
